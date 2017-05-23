@@ -665,9 +665,13 @@ footer {
 
 .main-title .selection {
     float: left;
-    padding: 10px 46px 0 0;
+    padding: 10px 6px 0 0;
     position: relative;
     z-index: 6;
+}
+
+.main-title .selection:last-child {
+	padding-right: 0;
 }
 
 .main-title .selection span {
@@ -682,8 +686,42 @@ footer {
     transition: .3s;
 }
 
+.main-title select {
+	line-height: 1em;
+	-moz-appearance: none;
+	text-indent: 0.01px;
+	text-overflow: '';
+	-ms-appearance: none;
+	appearance: none!important;
+	-webkit-appearance: none;
+	background: none;
+    color: #fff;
+    font: 700 12px/20px SFUIDisplay;
+    padding:0 2px 0 24px;
+    background: url(../img/ico-bottom-yellow.svg) no-repeat left;
+    background-size: 14px 10px;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	width: 145px;
+}
+
+.main-title .selection:nth-child(2n+1) select {
+	width: 112px;
+}
+
+.main-title select option {
+	color: #333;
+	text-transform: none;
+	font-weight: normal;
+}
+
 .main-title .selection span:hover {
     color: #ffc50f;
+}
+
+.main-title .selection.date-selection {
+	padding-right: 46px;
 }
 
 .main-title .selection.date-selection span {
