@@ -2262,7 +2262,7 @@ margin: 0 auto;
 .ticket-table .column.name {
     width: 97px;
     padding: 0 5px 0 11px;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
 }
 
 .ticket-table .column.date {
