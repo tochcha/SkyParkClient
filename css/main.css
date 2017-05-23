@@ -704,6 +704,11 @@ footer {
 	cursor: pointer;
 	text-transform: uppercase;
 	width: 145px;
+	transition: .3s;
+}
+
+.main-title select:hover {
+	color: #ffc50f;
 }
 
 .main-title .selection:nth-child(2n+1) select {
