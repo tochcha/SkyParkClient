@@ -1795,7 +1795,9 @@ margin: 0 auto;
     margin-right: 8px;
     z-index: 5;
     text-align: center;
-    display: none;
+    visibility: hidden;
+	opacity: 0;
+	transition: .3s;
 }
 
 .popup-485 .popup-top {
@@ -1870,7 +1872,9 @@ margin: 0 auto;
     margin-right: 8px;
     z-index: 5;
     text-align: center;
-    display: none;
+    visibility: hidden;
+	opacity: 0;
+	transition: .3s;
 }
 
 .popup-530 .popup-top {
@@ -1945,7 +1949,9 @@ margin: 0 auto;
     margin-right: 10px;
     z-index: 5;
     text-align: center;
-    display: none;
+    visibility: hidden;
+	opacity: 0;
+	transition: .3s;
 }
 
 .popup-397 .popup-top {
@@ -2427,17 +2433,21 @@ margin: 0 auto;
 }
 
 .ticket-table .column .act-menu {
-    margin: -50px 0 0;
-    padding: 4px 7px 11px;
+    margin: -46px 0 0;
+	padding: 0;
     position: absolute;
     z-index: 6;
     top: 100%;
-    left: -94px;
-    background-color: #fff;
-    width: 163px;
-    background: url(../img/act-menu.png) no-repeat;
-    background-size: 100% 100%;
-    display: none;
+    left: -87px;
+    width: 149px;
+    /*background: url(../img/act-menu.png) no-repeat;
+    background-size: 100% 100%;*/
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 1px 1px 4px 2px #d8d8d8;
+    visibility: hidden;
+	opacity: 0;
+	transition: .3s;
 }
 
 .ticket-table .column .act-menu li {
@@ -2499,8 +2509,8 @@ margin: 0 auto;
 }
 
 .ticket-table .column .act-menu li:last-child a {
-    -webkit-border-radius: 0 0 12px 12px;
-    border-radius: 0 0 12px 12px;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
 }
 
 .ticket-table .column .act-menu.with-title li.title {
@@ -3163,36 +3173,11 @@ margin: 0 auto;
     color: #000;
 }
 
+.visiblepopup {
+	opacity: 1 !important;
+	visibility: visible !important;
+}
 
-/**/
-
-
-/*@import url('_vars.sass')
-@import "vars"*/
-
-
-/* <=1199 */
-
-
-/* <=1199 end */
-
-
-/* <=991 */
-
-
-/* <=991 end */
-
-
-/* <=767 */
-
-
-/* <=767 end */
-
-
-/* <=479 */
-
-
-/* <=479 end */
 
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
 only screen and (-moz-min-device-pixel-ratio: 1.5),
@@ -3211,42 +3196,3 @@ only screen and (min-device-pixel-ratio: 1.5) {
         height: 94vh;
     }
 }
-
-
-/*==========  Mobile First Method  ==========*/
-
-
-/* Custom, iPhone Retina */
-
-
-/* Extra Small Devices, Phones */
-
-
-/* Small Devices, Tablets */
-
-
-/* Medium Devices, Desktops */
-
-
-/* Large Devices, Wide Screens */
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
-
-
-/**/
