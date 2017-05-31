@@ -470,11 +470,11 @@ footer {
 
 .jump-qty {
     position: absolute;
-    top: -5px;
-    right: 0;
-    background: url(../img/logo-right.png) no-repeat;
-    width: 134px;
-    height: 190px;
+    top: -1px;
+    right: 1px;
+    background: url(../img/logo-right.svg) no-repeat;
+    width: 136px;
+    height: 194px;
     text-indent: -9999px;
 }
 
